@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Gerenciador de Tarefas</h1>
+
+    <!-- Formulario -->
+    <section id="formulario">
+        <h2>Nova Tarefa</h2>
+
+        <input type="text" id="tarefa" placeholder="Nome da Tarefa">
+        <input type="text" id="responsavel" placeholder="Responsavél">
+
+        <textarea id="descricao" placeholder="Descrição da tarefa"></textarea>
+
+        <select id="prioridade">
+            <option value="">Selecione a prioridade</option>
+
+            <option value="baixa">Baixa</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+        </select>
+        <input type="date" id="data">
+        <button id="btnAdicionar">Adicionar Tarefa</button>
+    </section>
+    
+    <!--Contadores-->
+    <section id="contador">
+        
+        <div>Baixa: <span id="qtdBaixa">0</span></div>
+        <div>Media: <span id="qtdMedia">0</span></div>
+        <div>Alta: <span id="qtdAlta">0</span></div>
+        
+    </section>
+
+    <!--Colunas-->
+    <section id="kanban">
+        <div class="coluna">
+
+            <h2>ABERTO</h2>
+            <div id="aberto"></div>
+
+        </div>
+
+        <div class="coluna">
+
+            <h2>EM ANDAMENTO</h2>
+            
+            <div id="andamento"></div>
+        
+        </div>
+        
+        <div class="coluna">
+
+            <h2>FINALIZADA</h2>
+
+            <div id="finalizada"></div>
+        </div>
+     </section>
+
+     <script src="js/script.js"></script>
+
+    
+</body>
+</html>
